@@ -9,7 +9,7 @@ const forecast = (latitude, longitude, callback) => {
         } else if (body.error) {
             callback('unable to find location', undefined);
         } else {
-            callback(undefined, body.name + ' Actual Temperature is ' + body.main.temp + ' degree and humadity is ' + body.main.humidity);
+            callback(undefined, 'Actual Temperature Of ' + body.name + ' is ' + body.main.temp + ' degree and humadity is ' + body.main.humidity);
         }
     
     })
